@@ -1,0 +1,21 @@
+C:\Users\Jose\Documents\GitHub\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\ADODBFactory.dll
+C:\Users\Jose\Documents\GitHub\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\ADODBFactory.pdb
+C:\Users\Jose\Documents\GitHub\ProyectoIndicadores\RPCTest\ADODBFactory\obj\Debug\ADODBFactory.dll
+C:\Users\Jose\Documents\GitHub\ProyectoIndicadores\RPCTest\ADODBFactory\obj\Debug\ADODBFactory.pdb
+C:\Users\jalpiste\Documents\Visual Studio 2012\Projects\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\ADODBFactory.dll.config
+C:\Users\jalpiste\Documents\Visual Studio 2012\Projects\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\ADODBFactory.dll
+C:\Users\jalpiste\Documents\Visual Studio 2012\Projects\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\ADODBFactory.pdb
+C:\Users\jalpiste\Documents\Visual Studio 2012\Projects\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\EntityFramework.dll
+C:\Users\jalpiste\Documents\Visual Studio 2012\Projects\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\EntityFramework.xml
+C:\Users\jalpiste\Documents\Visual Studio 2012\Projects\ProyectoIndicadores\RPCTest\ADODBFactory\obj\Debug\ADODBFactory.dll
+C:\Users\jalpiste\Documents\Visual Studio 2012\Projects\ProyectoIndicadores\RPCTest\ADODBFactory\obj\Debug\ADODBFactory.pdb
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\ADODBFactory.dll.config
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\ADODBFactory.dll
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\ADODBFactory.pdb
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\EntityFramework.dll
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\EntityFramework.xml
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\ADODBFactory\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\ADODBFactory\obj\Debug\ADODBFactory.csprojResolveAssemblyReference.cache
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\ADODBFactory\obj\Debug\ADODBFactory.dll
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\ADODBFactory\obj\Debug\ADODBFactory.pdb

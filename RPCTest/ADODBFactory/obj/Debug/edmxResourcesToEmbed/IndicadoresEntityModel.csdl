@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDINDICADORESModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="IndicadoresEntityModel" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="APP_ACCESO" EntityType="BDINDICADORESModel.APP_ACCESO" />
+    <EntitySet Name="APPS" EntityType="BDINDICADORESModel.APPS" />
+    <EntitySet Name="GESTION_BASES" EntityType="BDINDICADORESModel.GESTION_BASES" />
+    <EntitySet Name="GESTION_INDICADORES_DETALLE" EntityType="BDINDICADORESModel.GESTION_INDICADORES_DETALLE" />
+    <EntitySet Name="ROLES" EntityType="BDINDICADORESModel.ROLES" />
+    <EntitySet Name="USUARIOS" EntityType="BDINDICADORESModel.USUARIOS" />
+    <AssociationSet Name="FK_APP_ACCESO_APPS" Association="BDINDICADORESModel.FK_APP_ACCESO_APPS">
+      <End Role="APPS" EntitySet="APPS" />
+      <End Role="APP_ACCESO" EntitySet="APP_ACCESO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_APP_ACCESO_ROLES" Association="BDINDICADORESModel.FK_APP_ACCESO_ROLES">
+      <End Role="ROLES" EntitySet="ROLES" />
+      <End Role="APP_ACCESO" EntitySet="APP_ACCESO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_USUARIOS_ROLES" Association="BDINDICADORESModel.FK_USUARIOS_ROLES">
+      <End Role="ROLES" EntitySet="ROLES" />
+      <End Role="USUARIOS" EntitySet="USUARIOS" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="APP_ACCESO">
+    <Key>
+      <PropertyRef Name="IDACCESOAPP" />
+    </Key>
+    <Property Name="IDACCESOAPP" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="IDAPP" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="IDROL" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="APPS" Relationship="BDINDICADORESModel.FK_APP_ACCESO_APPS" FromRole="APP_ACCESO" ToRole="APPS" />
+    <NavigationProperty Name="ROLES" Relationship="BDINDICADORESModel.FK_APP_ACCESO_ROLES" FromRole="APP_ACCESO" ToRole="ROLES" />
+  </EntityType>
+  <EntityType Name="APPS">
+    <Key>
+      <PropertyRef Name="IDAPP" />
+    </Key>
+    <Property Name="IDAPP" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CODAPP" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="NOMAPP" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="3" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="APP_ACCESO" Relationship="BDINDICADORESModel.FK_APP_ACCESO_APPS" FromRole="APPS" ToRole="APP_ACCESO" />
+  </EntityType>
+  <EntityType Name="GESTION_BASES">
+    <Key>
+      <PropertyRef Name="IDGESTION" />
+    </Key>
+    <Property Name="IDGESTION" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="GESTION" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SUBGESTION" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="CODI_GEST" Type="String" MaxLength="6" Unicode="true" FixedLength="false" />
+    <Property Name="ID_ABONADO" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="FEC_TRAMITE" Type="DateTime" Precision="0" />
+    <Property Name="FEC_BAJA" Type="DateTime" Precision="0" />
+    <Property Name="LLAMADAS_DIA" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="LLAMADAS_ANT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="LLAMADAS_TOTAL" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CEF" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CNE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="NOC" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="TIPO" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="VENTAS" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ESTADO" Type="String" MaxLength="3" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GESTION_INDICADORES_DETALLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="GESTION" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SUBGESTION" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TIPO" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="ANHO" Type="Int32" />
+    <Property Name="MES" Type="Int32" />
+    <Property Name="DIA" Type="Int32" />
+    <Property Name="HORA" Type="Int32" />
+    <Property Name="FECHA" Type="DateTime" Precision="0" />
+    <Property Name="TXT_01" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TXT_02" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TXT_03" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TXT_04" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TXT_05" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TXT_06" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TXT_07" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TXT_08" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TXT_09" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TXT_10" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TXT_11" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TXT_12" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IDORIGEN" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DESCRIPCION_ORIGEN" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="CANTIDAD" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TIEMPO" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="ROLES">
+    <Key>
+      <PropertyRef Name="IDROL" />
+    </Key>
+    <Property Name="IDROL" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CODROL" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="NOMROL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ESTADO" Type="String" MaxLength="3" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="APP_ACCESO" Relationship="BDINDICADORESModel.FK_APP_ACCESO_ROLES" FromRole="ROLES" ToRole="APP_ACCESO" />
+    <NavigationProperty Name="USUARIOS" Relationship="BDINDICADORESModel.FK_USUARIOS_ROLES" FromRole="ROLES" ToRole="USUARIOS" />
+  </EntityType>
+  <EntityType Name="USUARIOS">
+    <Key>
+      <PropertyRef Name="IDUSUARIO" />
+    </Key>
+    <Property Name="IDUSUARIO" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="CODUSUARIO" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="APEPAT" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="APEMAT" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NOMBRE" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DIRECCION" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="DNI" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IDROL" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="ROLES" Relationship="BDINDICADORESModel.FK_USUARIOS_ROLES" FromRole="USUARIOS" ToRole="ROLES" />
+  </EntityType>
+  <Association Name="FK_APP_ACCESO_APPS">
+    <End Role="APPS" Type="BDINDICADORESModel.APPS" Multiplicity="1" />
+    <End Role="APP_ACCESO" Type="BDINDICADORESModel.APP_ACCESO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APPS">
+        <PropertyRef Name="IDAPP" />
+      </Principal>
+      <Dependent Role="APP_ACCESO">
+        <PropertyRef Name="IDAPP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_APP_ACCESO_ROLES">
+    <End Role="ROLES" Type="BDINDICADORESModel.ROLES" Multiplicity="1" />
+    <End Role="APP_ACCESO" Type="BDINDICADORESModel.APP_ACCESO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLES">
+        <PropertyRef Name="IDROL" />
+      </Principal>
+      <Dependent Role="APP_ACCESO">
+        <PropertyRef Name="IDROL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_USUARIOS_ROLES">
+    <End Role="ROLES" Type="BDINDICADORESModel.ROLES" Multiplicity="0..1" />
+    <End Role="USUARIOS" Type="BDINDICADORESModel.USUARIOS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLES">
+        <PropertyRef Name="IDROL" />
+      </Principal>
+      <Dependent Role="USUARIOS">
+        <PropertyRef Name="IDROL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

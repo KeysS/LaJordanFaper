@@ -1,0 +1,10 @@
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\RPCTest\bin\RPCTest.dll
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\RPCTest\bin\RPCTest.pdb
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\RPCTest\bin\AustinHarris.JsonRpc.AspNet.dll
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\RPCTest\bin\AustinHarris.JsonRpc.dll
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\RPCTest\bin\Newtonsoft.Json.dll
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\RPCTest\bin\AustinHarris.JsonRpc.pdb
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\RPCTest\bin\Newtonsoft.Json.xml
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\RPCTest\obj\Release\RPCTest.csprojResolveAssemblyReference.cache
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\RPCTest\obj\Release\RPCTest.dll
+C:\Users\Jordan\Desktop\Nueva carpeta (2)\ProyectoIndicadores\RPCTest\RPCTest\obj\Release\RPCTest.pdb
